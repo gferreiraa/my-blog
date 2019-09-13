@@ -4,6 +4,7 @@ import SideBar from '../Sidebar'
 
 import * as S from '../Layout/styled'
 import GlobalStyles from '../../styles/global'
+import MenuBar from "../MenuBar"
 
 const Layout = ({ children }) => {
  
@@ -12,6 +13,7 @@ const Layout = ({ children }) => {
       <GlobalStyles/>
         <SideBar/>
       <S.LayoutMain>{children}</S.LayoutMain>
+      <MenuBar></MenuBar>
     </S.LayoutWrappper>
   )
 }
